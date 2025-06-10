@@ -82,7 +82,7 @@ def create_app():
 
     # Create tables
     with app.app_context():
-        import models  # noqa: F401
+         # noqa: F401
         db.create_all()
 
     return app
