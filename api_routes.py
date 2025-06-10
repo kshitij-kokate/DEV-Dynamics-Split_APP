@@ -308,7 +308,7 @@
 #     return create_response(True, {"status": "healthy"}, "Service is running")
 
 from flask import Blueprint, request, jsonify
-from extension import db
+from extensions import db
 from models import Person, Expense, ExpenseSplit, SplitMethod
 from settlement_calculator import SettlementCalculator
 from decimal import Decimal, InvalidOperation
